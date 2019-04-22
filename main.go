@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"mirage/ios"
 	"os"
 
 	"github.com/urfave/cli"
@@ -16,7 +17,9 @@ func main() {
 
 	app.Action = func(context *cli.Context) error {
 		if context.Bool("bootstrap") {
-			fmt.Println(context.Args().Get(0))
+			if context.Args().Get(0) == "ios" {
+				ios.Bootstrap()
+			}
 		} else {
 			fmt.Println(context.Args().Get(0))
 		}
