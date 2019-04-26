@@ -1,0 +1,6 @@
+@import Package
+
+@define
+
+    Package().updater = "go build"
+@end
