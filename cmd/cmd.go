@@ -30,3 +30,5 @@ func (c *CommandObject) Exec() bool {
 func (c *CommandObject) SetCommand(cmd string) {
 	c.command = cmd
 }
+
+var Sess *CommandObject

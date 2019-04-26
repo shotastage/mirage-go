@@ -1,4 +1,4 @@
-module mirage
+module mirage-go
 
 go 1.12
 
