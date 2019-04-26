@@ -23,6 +23,9 @@ func main() {
 		} else {
 			fmt.Println(context.Args().Get(0))
 		}
+
+		println("Aeguments required")
+
 		return nil
 	}
 
