@@ -1,4 +1,8 @@
 github.com/shotastage/GFileable v0.0.0-20181007164246-f6b9871bd4cd h1:vgoTmW3Sh/QXXfkjE3l7z7WbLG6FnH/SbBfYxIkhpDU=
 github.com/shotastage/GFileable v0.0.0-20181007164246-f6b9871bd4cd/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
+github.com/shotastage/GFileable v0.0.0-20190428034829-8b8b3431f3a3 h1:Cq4Str3StBYQO9pE3fK1uv2W22mYW+PU4MNb0ozlkCY=
+github.com/shotastage/GFileable v0.0.0-20190428034829-8b8b3431f3a3/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
+github.com/shotastage/GFileable v0.0.0-20190428042030-18926c5d98e1 h1:IU2WxaCM2eXTpMc17w1cKEVtRBeERcSWw8Z4OJfu9Ak=
+github.com/shotastage/GFileable v0.0.0-20190428042030-18926c5d98e1/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
 github.com/urfave/cli v1.20.0 h1:fDqGv3UG/4jbVl/QkFwEdddtEDjh/5Ov6X+0B/3bPaw=
 github.com/urfave/cli v1.20.0/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
