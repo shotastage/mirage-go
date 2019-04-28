@@ -5,9 +5,12 @@ import (
 	"mirage-go/cmd"
 )
 
-func BootstrapMiragePackage() {
-	print("Initializing MIRAGE package...")
-	GFileable.Touch("Mgpkg")
+func Bootstrap() {
+	println("Initializing MIRAGE package...")
+	GFileable.Touch("Mgfile")
+
+	file := GFileable.Path("")
+	file.WriteString("DD")
 
 	cmd.Sess.Exec()
 }

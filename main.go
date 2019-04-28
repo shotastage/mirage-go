@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"mirage/ios"
+	"mirage-go/ios"
+	"mirage-go/mgpkg"
 	"os"
 
 	"github.com/urfave/cli"
@@ -19,6 +20,12 @@ func main() {
 		if context.Bool("bootstrap") {
 			if context.Args().Get(0) == "ios" {
 				ios.Bootstrap()
+				return nil
+			}
+
+			if context.Args().Get(0) == "mgpkg" {
+				mgpkg.Bootstrap()
+				return nil
 			}
 		} else {
 			fmt.Println(context.Args().Get(0))
