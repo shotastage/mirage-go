@@ -1,8 +1,7 @@
 package touch
 
 func Touch(extension string) {
-
-	println("Now under construction")
+	print("MG Touch is now under construction")
 
 	if extension == "py" {
 

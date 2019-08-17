@@ -5,6 +5,7 @@ import (
 	"mirage-go/gormdb"
 	"mirage-go/ios"
 	"mirage-go/mgpkg"
+	"mirage-go/touch"
 
 	"os"
 
@@ -43,10 +44,23 @@ func main() {
 		return nil
 	}
 
+	app.Action = func(context *cli.Context) error {
+
+		touch.Touch("py")
+
+		println("Aeguments required")
+
+		return nil
+	}
+
 	app.Flags = []cli.Flag{
 		cli.BoolFlag{
 			Name:  "bootstrap, bs",
 			Usage: "Bootstrap mirage project",
+		},
+		cli.BoolFlag{
+			Name:  "touch, cr",
+			Usage: "Create new text file with copyright header",
 		},
 	}
 
