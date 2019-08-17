@@ -5,7 +5,7 @@ function install_body() {
     mkdir .mirage-tool/
     cd .mirage-tool/
     echo "Downloading update..."
-    git clone https://github.com/shotastage/mirage-go.git >> dev/null
+    git clone https://github.com/shotastage/mirage-go.git >> /dev/null
     cd mirage-go/
     echo "Building..."
     go build 
