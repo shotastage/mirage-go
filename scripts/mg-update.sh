@@ -23,7 +23,7 @@ function install_body() {
 
 
 function restore_config() {
-    rm -rf .mirage-tool-tmp/
+    rm -rf $HOME/.mirage-tool-tmp/
     echo "Restore config:: NOW UNDER CONSTRUCTION"
 }
 
