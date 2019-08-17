@@ -23,6 +23,13 @@ mv ./mirage-go/mg ./bin/mg
 
 
 
+mv ./mirage-go/scripts/mg-update.sh ./bin/
+cd ./bin/
+mv mg-update.sh mg-update
+
+
+
+
 
 if [ -f $HOME/.bash_profile ]; then
     echo "Writing path..."
