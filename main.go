@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
+	"mirage-go/gormdb"
 	"mirage-go/ios"
 	"mirage-go/mgpkg"
+
 	"os"
 
 	"github.com/urfave/cli"
@@ -25,6 +27,11 @@ func main() {
 
 			if context.Args().Get(0) == "mgpkg" {
 				mgpkg.Bootstrap()
+				return nil
+			}
+
+			if context.Args().Get(0) == "gorm" {
+				gormdb.Bootstrap()
 				return nil
 			}
 		} else {
