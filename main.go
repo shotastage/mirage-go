@@ -12,6 +12,11 @@ func main() {
 	flag.Parse()
 	args := flag.Args()
 
+	if len(args) < 1 {
+		fmt.Println("🧐  Too short argument.")
+		return
+	}
+
 	if args[0] == "bs" || args[0] == "bootstrap" {
 		mgpkg.Bootstrap()
 		return

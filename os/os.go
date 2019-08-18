@@ -5,7 +5,7 @@ import (
 )
 
 func CheckPlatform() {
-	print("Your platform is ")
+	print("😃  Your platform is ")
 
 	switch runtime.GOOS {
 	case "windows":
