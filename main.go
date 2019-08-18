@@ -36,7 +36,7 @@ func main() {
 				return nil
 			}
 		} else {
-			fmt.Println(context.Args().Get(0))
+			fmt.Println(context.Args().Get(1))
 		}
 
 		println("Aeguments required")
@@ -44,11 +44,9 @@ func main() {
 		return nil
 	}
 
-	app.Action = func(context *cli.Context) error {
+	app.Action = func(c *cli.Context) error {
 
-		touch.Touch("py")
-
-		println("Aeguments required")
+		touch.Touch(c.Args().Get(1))
 
 		return nil
 	}
