@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
 
+function splash() {
+    echo "MIRAGE Go Updater"
+    echo "v0.0.1-001"
+    echo ""
+    echo "Copyright (C) 2019 Shota Shimazu. Licensed under the MIT."
+    echo
+}
 
 function install_body() {
     mkdir .mirage-tool/
     cd .mirage-tool/
-    echo "Downloading update..."
+    echo "⬇️  Downloading update..."
     git clone --quiet https://github.com/shotastage/mirage-go.git > /dev/null
     cd mirage-go/
-    echo "Building..."
+    echo "🔨  Building..."
     go build 
     mv mirage-go mg
     cd ..
@@ -24,12 +31,12 @@ function install_body() {
 
 function restore_config() {
     rm -rf $HOME/.mirage-tool-tmp/
-    echo "Restore config:: NOW UNDER CONSTRUCTION"
+    echo "🔴  Restore config:: NOW UNDER CONSTRUCTION"
 }
 
 
 function restore_data() {
-    echo "Restore data:: NOW UNDER CONSTRUCTION"
+    echo "🔴  Restore data:: NOW UNDER CONSTRUCTION"
 }
 
 # HOME DIRECTORY
@@ -40,6 +47,7 @@ mv .mirage-tool/ .mirage-tool-tmp/
 
 rm -rf .mirage-tool/
 
+splash
 install_body
 restore_config
 restore_data
