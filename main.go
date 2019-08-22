@@ -32,5 +32,10 @@ func main() {
 		return
 	}
 
+	if args[0] == "v" || args[0] == "version" {
+		info.Version()
+		return
+	}
+
 	fmt.Println("❌  Given aurguments is invalid.")
 }

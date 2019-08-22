@@ -7,6 +7,14 @@ import (
 	"github.com/shotastage/GFileable"
 )
 
+func Version() {
+	fmt.Println()
+	fmt.Println("MIRAGE Go Version ", Version)
+	fmt.Println("Copyright (C) 2019 Shota Shimazu All Rights Reserved.")
+	fmt.Println("https://lin9.me/WjdSu")
+	fmt.Println()
+}
+
 func Process(task string) {
 
 	if task == "home" {
