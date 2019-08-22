@@ -32,6 +32,7 @@ mv mg-update.sh mg-update
 
 
 if [ -f $HOME/.bash_profile ]; then
-    echo "Writing path..."
+    echo "Writing Bash path..."
     echo 'export PATH="$HOME/.mirage-tool/bin:$PATH"' >> $HOME/.bash_profile
+    echo "If you use other Shell, please set path manually."
 fi
