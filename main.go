@@ -37,5 +37,10 @@ func main() {
 		return
 	}
 
+	if args[0] == "h" || args[0] == "help" {
+		info.Help()
+		return
+	}
+
 	fmt.Println("❌  Given aurguments is invalid.")
 }
