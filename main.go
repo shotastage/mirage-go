@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"mirage-go/info"
 	"mirage-go/mgpkg"
 	"mirage-go/os"
 	"mirage-go/touch"
@@ -27,10 +28,15 @@ func main() {
 		return
 	}
 
+	if args[0] == "info" {
+		info.Process(args[1])
+		return
+	}
+
 	if args[0] == "chk-pltfm" || args[0] == "check-platform" {
 		os.CheckPlatform()
 		return
 	}
 
-	fmt.Println("Given aurguments is invalid.")
+	fmt.Println("❌  Given aurguments is invalid.")
 }
