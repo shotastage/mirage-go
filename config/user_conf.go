@@ -42,9 +42,7 @@ func InitialConfig() {
 		return
 	}
 
-	//GFileable.Touch(shared.UserConfigPath + "/UserConfig.json")
-
-	file := GFileable.Join(shared.UserConfigPath, "/UserConfig.json")
-
+	GFileable.Touch(GFileable.Join(shared.UserConfigPath, "UserConfig.json").Path)
+	file := GFileable.Join(shared.UserConfigPath, "UserConfig.json")
 	file.WriteString(fmt.Sprintf("%s", out))
 }

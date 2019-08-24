@@ -39,6 +39,12 @@ function restore_data() {
     echo "🔴  Restore data:: NOW UNDER CONSTRUCTION"
 }
 
+function clean() {
+    echo "🧹  Cleaning..."
+    cd $HOME/.mirage-tool/
+    rm -rf mirage-go/
+}
+
 # HOME DIRECTORY
 cd
 
@@ -51,3 +57,4 @@ splash
 install_body
 restore_config
 restore_data
+clean

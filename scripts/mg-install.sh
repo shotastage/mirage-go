@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+function clean() {
+    cd $HOME/.mirage-tool/
+    rm -rf mirage-go
+}
+
 cd # Move home directory
 
 if [ -e .mirage-tool/ ]; then
@@ -28,7 +33,7 @@ cd ./bin/
 mv mg-update.sh mg-update
 
 
-
+clean
 
 
 if [ -f $HOME/.bash_profile ]; then
