@@ -16,6 +16,7 @@ function yesno {
         case $ANS in
         [Yy]*)
             uninstall
+            exit 0
             ;;  
         [Nn]*)
             echo "Canceled"
