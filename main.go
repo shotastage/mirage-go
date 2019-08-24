@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"mirage-go/config"
 	"mirage-go/info"
 	"mirage-go/mgpkg"
 	"mirage-go/touch"
@@ -19,6 +20,11 @@ func main() {
 
 	if args[0] == "init" || args[0] == "initialize" {
 		mgpkg.Initialize()
+		return
+	}
+
+	if args[0] == "cf" || args[0] == "configure" {
+		config.InitialConfig()
 		return
 	}
 

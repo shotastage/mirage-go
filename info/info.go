@@ -2,6 +2,7 @@ package info
 
 import (
 	"fmt"
+	"mirage-go/shared"
 	"runtime"
 
 	"github.com/shotastage/GFileable"
@@ -18,11 +19,20 @@ func Process(task string) {
 
 	if task == "home" {
 		homeDir()
+		return
 	}
 
 	if task == "os" {
 		os()
+		return
 	}
+
+	if task == "config-file-path" {
+		fab()
+		return
+	}
+
+	println("❌  Ivalid argument", task)
 }
 
 func homeDir() {
@@ -52,4 +62,12 @@ func os() {
 	print(".\n")
 
 	return
+}
+
+func fab() {
+	println("🛠  MIRAGE User configuration path is:")
+	file := GFileable.Join(shared.UserConfigPath, "UserConfig.json")
+
+	println(file.Path)
+
 }

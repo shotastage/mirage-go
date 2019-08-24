@@ -1,8 +1,11 @@
 package config
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
+	"mirage-go/core"
+	"mirage-go/shared"
 
 	"github.com/shotastage/GFileable"
 )
@@ -17,19 +20,31 @@ func InitialConfig() {
 
 	conf := UserConfig{}
 
-	conf.Name = ""
-	conf.Email = ""
-	conf.Username = ""
+	print("Your full name: ")
+	conf.Name = core.StrStdin()
+
+	print("Your email: ")
+	conf.Email = core.StrStdin()
+
+	print("Your username: ")
+	conf.Username = core.StrStdin()
 
 	outputJson, err := json.Marshal(&conf)
 	if err != nil {
 		panic(err)
 	}
 
-	GFileable.Touch("UserConfig.json")
+	out := new(bytes.Buffer)
+	json.Indent(out, outputJson, "", "    ")
 
-	file := GFileable.Path("UserConfig.json")
+	if err != nil {
+		fmt.Println("JSON Marshal error:", err)
+		return
+	}
 
-	file.WriteString(fmt.Sprintf("%s", outputJson))
+	//GFileable.Touch(shared.UserConfigPath + "/UserConfig.json")
 
+	file := GFileable.Join(shared.UserConfigPath, "/UserConfig.json")
+
+	file.WriteString(fmt.Sprintf("%s", out))
 }
