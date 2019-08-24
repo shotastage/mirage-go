@@ -2,3 +2,11 @@ github.com/shotastage/GFileable v0.0.0-20190822083211-28935bee0adf h1:EzVAY2lB54
 github.com/shotastage/GFileable v0.0.0-20190822083211-28935bee0adf/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
 github.com/shotastage/GFileable v0.0.0-20190822094226-a860274f0427 h1:T4t9eiZJS6tJeBeE4nS/0THr4uv95k6LhYfMNkyLDqY=
 github.com/shotastage/GFileable v0.0.0-20190822094226-a860274f0427/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
+github.com/shotastage/GFileable v0.0.0-20190824081100-18dad36c7a7d h1:PC3s3udIWjcbxeaJUKDZPmIzg8TI10v2sHj68rcfL4k=
+github.com/shotastage/GFileable v0.0.0-20190824081100-18dad36c7a7d/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
+github.com/shotastage/GFileable v0.0.0-20190824095638-bf5c8b224e58 h1:jJvbs7vIuJjw2U78RLP473ZeIw7xpk+wVLV/KWkz64s=
+github.com/shotastage/GFileable v0.0.0-20190824095638-bf5c8b224e58/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
+github.com/shotastage/GFileable v0.0.0-20190824100030-18ff5bdac077 h1:iKhAMgnt5q3aPgHgbzG/GmsyS43gK1UN2t8pxwsaP4Q=
+github.com/shotastage/GFileable v0.0.0-20190824100030-18ff5bdac077/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
+github.com/shotastage/GFileable v0.0.0-20190824112720-82d48923c8f0 h1:vnx8yOcRY+ZLl7UMtIa4WPpm5J2WSMLhQMiPWoZ0Lm0=
+github.com/shotastage/GFileable v0.0.0-20190824112720-82d48923c8f0/go.mod h1:ZJriT4WQ5vsALeic6/8jVB6oFNhv0gP8zCuVdSOplds=
