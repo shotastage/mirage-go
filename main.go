@@ -17,8 +17,8 @@ func main() {
 		return
 	}
 
-	if args[0] == "bs" || args[0] == "bootstrap" {
-		mgpkg.Bootstrap()
+	if args[0] == "init" || args[0] == "initialize" {
+		mgpkg.Initialize()
 		return
 	}
 
