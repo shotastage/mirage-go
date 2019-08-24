@@ -2,9 +2,14 @@
 
 
 function uninstall() {
-    # rm -rf .mirage-tool/
+    cd 
+    rm -rf .mirage-tool/
+
+    echo ""
+    echo ""
     echo "MIRAGE Go has been uninstalled!"
     echo "Please remove PATH manually."
+    echo ""
 }
 
 function yesno {
@@ -29,5 +34,4 @@ function yesno {
   done
 }
 
-cd
 yesno
