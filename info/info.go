@@ -17,6 +17,11 @@ func Version() {
 
 func Process(task string) {
 
+	if task == "help" {
+		infoHelp()
+		return
+	}
+
 	if task == "home" {
 		homeDir()
 		return
@@ -29,6 +34,11 @@ func Process(task string) {
 
 	if task == "config-file-path" {
 		fab()
+		return
+	}
+
+	if task == "check-compatibility" {
+		compatibility()
 		return
 	}
 

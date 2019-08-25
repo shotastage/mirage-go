@@ -33,7 +33,7 @@ func main() {
 		return
 	}
 
-	if args[0] == "info" {
+	if args[0] == "i" || args[0] == "info" {
 		info.Process(args[1])
 		return
 	}
