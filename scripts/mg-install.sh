@@ -14,12 +14,19 @@ if [ -e .mirage-tool/ ]; then
 fi
 
 
+# Prepare directory
 mkdir .mirage-tool/
 cd .mirage-tool/
-git clone https://github.com/shotastage/mirage-go.git
+
+# Download
+echo "⬇️  Downloading..."
+git clone --quiet https://github.com/shotastage/mirage-go.git >> /dev/null
+
+# Build 
 cd mirage-go/
-echo "Building..."
-go build
+echo "🔄  Building..."
+go build >> /dev/null
+
 mv mirage-go mg
 cd ..
 
