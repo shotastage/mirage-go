@@ -31,10 +31,10 @@ func infoHelp() {
 	fmt.Println()
 	fmt.Println("The commands are:")
 	fmt.Println()
-	fmt.Println("		home                   Show home directory")
-	fmt.Println("		os                     Show OS")
-	fmt.Println("		config-file-path       Show config file path")
-	fmt.Println("		check-compatibility    Check MIRAGE Go compatibility")
+	fmt.Println("		home                   Show home directory.")
+	fmt.Println("		os                     Show OS.")
+	fmt.Println("		config-file-path       Show config file path.")
+	fmt.Println("		check-compatibility    Check MIRAGE Go compatibility.")
 
 	fmt.Println()
 
