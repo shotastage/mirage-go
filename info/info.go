@@ -78,6 +78,5 @@ func fab() {
 	print("🛠  MIRAGE User configuration path is　")
 	file := GFileable.Join(shared.UserConfigPath, "UserConfig.json")
 
-	print(file.Path)
-
+	print(file.Path, "\n")
 }

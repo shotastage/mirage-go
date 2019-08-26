@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"mirage-go/base"
 	"mirage-go/config"
 	"mirage-go/info"
 	"mirage-go/mgpkg"
@@ -30,6 +31,11 @@ func main() {
 
 	if args[0] == "cr" || args[0] == "create" {
 		touch.Touch(args[1])
+		return
+	}
+
+	if args[0] == "cb" || args[0] == "create-base" {
+		base.Process(args[1])
 		return
 	}
 

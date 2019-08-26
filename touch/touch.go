@@ -16,7 +16,6 @@ func Touch(file string) {
 	}
 
 	if strings.Contains(ext[1], "py") {
-		println("Creating Python file")
 
 		GFileable.Touch(file)
 
@@ -33,14 +32,27 @@ func Touch(file string) {
 	}
 
 	if strings.Contains(ext[1], "go") {
-		println("Creating Go file")
+		GFileable.Touch(file)
+
+		file := GFileable.Path(file)
+		file.WriteString("// FILE_NAME \n")
+		file.WriteString("// Created by AUTHOR_NAME on DATE\n")
+		file.WriteString("// Copyright © 2019 COPYRIGHT_NAME\n")
+		file.WriteString("//\n")
+		file.WriteString("\n")
+		file.WriteString("package pkg_name\n")
+		file.WriteString("\n")
 	}
 
 	if strings.Contains(ext[1], "sh") {
-		println("Creating Shell file")
+		println("🙇  Sorry creating Shell file does not supported now.")
 	}
 
 	if strings.Contains(ext[1], "js") {
-		println("Creating JavaScript file")
+		println("🙇  Sorry creating JavaScript file does not supported now.")
+	}
+
+	if strings.Contains(ext[1], "swift") {
+		println("🙇  Sorry creating Swift file does not supported now.")
 	}
 }
