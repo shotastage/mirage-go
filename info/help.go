@@ -15,6 +15,7 @@ func Help() {
 	fmt.Println("		init, initialize       Initialize MIRAGE project & create Mgfile.")
 	fmt.Println("		cf, configure          Configure global settings.")
 	fmt.Println("		cr, create             Create a new file with headings.")
+	fmt.Println("		cb, create-base        Create a base template dirs or files.")
 	fmt.Println("		i, info                Show information.")
 	fmt.Println("		h, help                Show usage or help of MIRAGE Go.")
 	fmt.Println("		v, version             Show MIRAGE Go version")
