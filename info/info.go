@@ -8,13 +8,6 @@ import (
 	"github.com/shotastage/GFileable"
 )
 
-func Version() {
-	fmt.Println("MIRAGE Go Version ", "0.0.1")
-	fmt.Println("Copyright (C) 2019 Shota Shimazu All Rights Reserved.")
-	fmt.Println("https://lin9.me/WjdSu")
-	fmt.Println()
-}
-
 func Process(task string) {
 
 	if task == "help" {
@@ -79,4 +72,11 @@ func fab() {
 	file := GFileable.Join(shared.UserConfigPath, "UserConfig.json")
 
 	print(file.Path, "\n")
+}
+
+func Version() {
+	fmt.Println("MIRAGE Go Version ", "0.0.1")
+	fmt.Println("Copyright (C) 2019 Shota Shimazu All Rights Reserved.")
+	fmt.Println("https://lin9.me/WjdSu")
+	fmt.Println()
 }

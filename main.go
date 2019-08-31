@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"mirage-go/base"
 	"mirage-go/config"
+	"mirage-go/gormdb"
 	"mirage-go/info"
 	"mirage-go/mgpkg"
 	"mirage-go/touch"
@@ -36,6 +37,11 @@ func main() {
 
 	if args[0] == "cb" || args[0] == "create-base" {
 		base.Process(args[1])
+		return
+	}
+
+	if args[0] == "model" || args[0] == "gorm-model" {
+		gormdb.Process(args[1])
 		return
 	}
 
