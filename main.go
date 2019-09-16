@@ -8,6 +8,7 @@ import (
 	"mirage-go/gormdb"
 	"mirage-go/info"
 	"mirage-go/mgpkg"
+	"mirage-go/runner"
 	"mirage-go/touch"
 )
 
@@ -57,6 +58,11 @@ func main() {
 
 	if args[0] == "h" || args[0] == "help" {
 		info.Help()
+		return
+	}
+
+	if args[0] == "run" {
+		runner.Process()
 		return
 	}
 
